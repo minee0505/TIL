@@ -1,0 +1,49 @@
+1. 깃 리눅스 명령어
+- ls:  하위폴더
+- ls -a: 숨김폴더까지 보여줌
+- pwd: 현재 위치한 폴더 출력
+- cd: 원하는 경로로 이동 (ls로 확인 후 이동) // cd .. =>상위폴더 이동, cd +탭키 ==> 이동 가능 목록, cd +일정부분 입력 후 탭키 =>자동완성
+- mkdir 폴더명: 새 디렉토리 생성
+- rm -rf 폴더 : 폴더
+- rm 파일 : 파일 삭제
+- clear: 터미널 지우기
+- start .: 현재 위치한 폴더 열기
+- touch : 파일 생성하기
+
+2. 로컬 레포지토리 생성
+- git init : 현재 작업 중인 디렉터리에 새로운 Git 레포지토리를 생성 // `ls -a` 명령어를 입력하여 숨김폴더인 '.git' 폴더가 생성되었는지 확인
+** git init 프로젝트 시작할 때 한번만
+==> 하고나서 형제 폴더는 init해도 되는데 하위폴더나 상위폴더는 절대 하면 안됨!
+
+3. git status
+- 어떤 파일이 수정되었는지
+- 어떤 파일이 아직 스테이징되지 않았는지
+- 현재 어떤 브랜치에 위치해 있는지 
+
+4. git add filename
+- 아이돌 데뷔조 뽑는 거
+- git add . = 다 추가
+
+5. git commit -m "~~~"
+- 아이돌 데뷔조 스테이지에 데뷔 무대 서는 거
+
+6. git log
+- git log oneline : 한 줄로 보는 거 
+- git log --oneline --all --graph
+
+7. git commit --amend
+- 가장 최근의 커밋을 수정하는 데 사용
+- 혼자 할 때만 사용
+
+8. .gitignore
+- 특정 파일이나 디렉토리를 버전 관리에서 제외
+
+9. 브랜치
+- git branch : 내가 생성한 모든 브랜치 목록
+- git branch <branch-name> : 브랜치 생성
+- git switch <branch-name> : 브랜치 이동
+- git branch -d branch_name : 브랜치 삭제 (병합되기 전에)
+- git branch -D branch_name : 브랜치 삭제
+- git branch -m new_branch_name : 현재 브랜치 이름 변경
+- git branch -m old_branch_name new_branch_name : 다른 브랜치 이름 변경
+
